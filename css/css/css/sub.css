@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+/* 공지사항 영역 서식 */
+.title_back{background: url('https://jsu0416.dothome.co.kr/miero/images/sub_bg1.jpg');background-position: 0px -240px;height: 250px;background-repeat: no-repeat;background-size: cover;}
+.title_back + h2{display: block;}
+main .sub_nav{height: 50px; background-color: #cccccc;}
+main .sub_nav ul{display: flex; justify-content: center; width: 300px;margin: 0 auto; padding: 13px;}
+main .sub_nav ul li{line-height: 22px; padding: 0px 10px; border-right: 1px solid #969696;}
+main .sub_nav ul li:first-child a{color: #f36f21!important;}
+main .sub_nav ul li:last-child a{color: #969696!important;}
+main .sub_nav ul li:last-child{border: none;}
+
+/* 게시판 가운데 배치 */
+main article{width: 1200px;margin: 0 auto;}
+main h2{display: none;}

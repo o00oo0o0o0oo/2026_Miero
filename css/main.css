@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+main {width: 100%; overflow-x: hidden;}
+
+
+#mslide {height: 100vh;}
+#mslide h2{display: none;}
+#mslide img{width: 100%;}
+
+#visual_slide{}
+#visual_slide img{transform: scale(1);}
+#visual_slide div{
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#visual_slide > div:first-child {
+opacity: 1;
+}
+
+#visual_slide div:first-child{z-index: 4;}
+#visual_slide div:nth-child(2){z-index: 3;}
+#visual_slide div:nth-child(3){z-index: 2;}
+#visual_slide div:last-child{z-index: 1;}
+
+#visual_slide div img{
+    height: 100vh;
+}
+
+#visual_slide span{
+    position: absolute;
+    z-index: 100;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    line-height: 60px;text-shadow: 0px 0px 4px #696969;
+    top: 250px; left: 3%;
+
+}
+
+/* 좌우버튼 */
+.s_btn{
+    position: absolute;
+    left: 4%; top: 80%;
+    display: flex;
+    z-index: 100;
+
+
+    padding: 12px 6px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.s_btn li{
+    background-color: #ffffff;
+    border: 1px solid #969696;
+    margin-right: 10px;
+}
+
+.s_btn img {
+    width: 50px;
+}
+
+/* 컨트롤버튼 */
+#visual_slide .cont_btn{
+    position: absolute;
+    right: 1.5%; top: 50%;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#visual_slide .cont_btn li{
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+/* 활성화 된 슬라이드 */
+.on{
+    background-color: orange !important;
+}
+
+#tap_con, #product, #event{
+    height: 600px;
+    padding: 60px 0px;
+}
+
+
+/* 뉴스 컨텐츠 영역 */
+#news_con{
+    width: var(--base_width);
+    margin: var(--m_auto);
+    display: flex;
+    justify-content: space-between;
+
+    padding: 100px 0px;
+}
+
+#news_con .c_title > h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+#news_con .c_title > h2 > span {
+    font-size: 20px;
+    display: block;
+} 
+
+#news_con article:first-child{
+    width: 650px;
+}
+
+#news_con article:last-child{
+    width: 450px;
+    padding-left: 30px;
+}
+
+#news_con i.far{
+    color: orange;
+    padding-right: 6px;
+    font-size: 12px;
+}
+
+#news_con ul{
+
+}
+
+#news_con ul > li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+#news_con ul > li > a{
+    line-height: 25px;
+
+}
+
+#news_con article iframe{
+    width: 650px; height: 320px;
+}
+
+/* 탭 컨텐츠 */
+#tab_con{
+    background: #f1f1f1;
+}
+
+.tcon{
+    width: 1200px; height: 600px;
+    margin: var(--m_auto);
+    background-image: url(../images/mcon2_7.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    overflow: hidden;
+    padding: 50px 0px;
+}
+
+.tcon h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tcon ul{
+    width: 45%;
+    padding-top: 30px;
+    display: flex;
+    position: relative;
+}
+.tcon ul > li{
+    margin-right: 10px;
+}
+.tcon ul > li > a{
+    background-color: #333;
+    color: white;
+    padding: 10px 25px;
+    font-size: 17px;
+}
+.tcon ul > li > .cont{
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 80px; left: 0px;
+    line-height: 200%;
+    padding: 10px;
+    color: #6e6e6e;
+    font-size: 16px;
+    display: none;
+}
+
+.t_on{
+    background-color: orange !important;
+}
+
+.tcon ul > li > .cont span{
+    font-size: 22px;
+    display: block;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.tcon ul > li > .cont img{
+    width: 600px;
+}
+
+.tcon ul > li:first-child .cont{
+    display: block;
+}
+
+
+/* 제품 소개 */
+#product{
+    padding: 50px 0px;
+    background-color: #ffc845;
+}
+#product > article{
+    width: var(--base_width);
+    margin:var(--m_auto);
+}
+
+#product > article > h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#product > article > ul{
+    display: flex;
+    justify-content: center;
+}
+
+#product > article > ul > li{
+    width: 370px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+#product > article > ul > li img{
+    width: 80%;
+}
+
+#product > article > ul > li h3{
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: left;
+}
+
+#product > article > ul > li hr{
+    border-color: #c4962a;
+}
+
+#product > article > ul > li p{
+    padding-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 180%;
+    color: #8b6a21;
+}
+
+
+/* 더보기 버튼 */
+#gallery .m_box {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#gallery .m_box a {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    padding: 10px 25px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+}
+
+

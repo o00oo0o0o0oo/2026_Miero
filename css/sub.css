@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+header {}
+
+header > h1{
+  width: 300px;
+  position: absolute;
+  left: 2%; top: 30px;
+}
+
+header > h1 > a > img{width: 100%;}
+
+.title_back{
+  background: url(https://o00oo0o0o0oo.dothome.co.kr/miero/images/sub_bg1.jpg);
+  background-position: 0px -240px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .sub_nav{
+  height: 50px;
+  background-color: #999999;
+}
+
+/* 게시판 가로 가운데 배치 */
+main article{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+main .sub_nav ul{
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+main .sub_nav ul li{
+  line-height: 22px;
+  padding: 0px 10px;
+}
+
+main .sub_nav ul li:first-child a{
+  color: #f36f21;
+  border-right: 1px solid #969696;
+}
+
+main .sub_nav ul li:last-child a{
+  color: #969696;
+}
+
+main section h2{display: none;}
+
+/* GNB */
+.gnb {
+  position: absolute;
+  top: 50px; right: 2%;
+}
+
+.gnb > ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.gnb > ul > li{
+  margin: 0px 20px;
+  line-height: 40px;
+  font-size: 16px;
+  position: relative;
+}
+.gnb > ul > li > a{
+  color: white !important;
+}
+
+.gnb i.fa-angle-down{
+  transform: translateX(3px) !important;
+}
+
+.gnb > ul > li:last-child a{
+  background-color: #222222 !important;
+  padding: 5px 7px;
+  border: 1px solid #222222 !important;
+  transition: 0.4s;
+}
+
+.gnb > ul > li:first-child .sub{width: 150px; left: -45px;}
+.gnb > ul > li:nth-child(2) .sub{width: 200px; left: -68px;}
+
+.sub {
+  width: 100% !important; 
+  position: absolute !important;
+  display: none !important;
+  background-color: white !important;
+  padding: 2px !important;
+  border-radius: 4px !important;
+  border: 1px solid #333333 !important;
+  box-shadow: 0px 1px 1px #999999 !important;
+}
+.sub > li{
+  text-align: center;
+}
+.sub > li > a{
+  color: #333333 !important;
+  line-height: 36px;
+  display: block;
+  transition: 0.3s;
+}
+.sub > li > a:hover{
+  background-color: #f36f21 !important;
+  color: white !important;
+}
+
+.gnb > ul > li:last-child:hover a{
+  background-color: white !important;
+  border: 1px solid #f36f21 !important;
+  color: #f36f21 !important;
+}
+
+
+/* 푸터 전체 */
+footer {
+  width: 100%;
+  background-color: #2f2f2f;
+  color: #b1aeae;
+  padding-top: 60px;
+}
+
+/* 푸터 내부 너비 */
+.f_inner {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.f_inner > nav > dl a{
+  font-size: 14px;
+  line-height: 150%;
+}
+
+/* 메뉴 가로 정렬 */
+.f_inner > nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* 각 메뉴 묶음 */
+.f_inner > nav > dl {
+  position: static;
+}
+
+.f_inner > nav > dl:last-child {
+  color: white;
+  width: 200px;
+}
+
+.f_inner dl:last-child dt{
+  font-size: 20px;
+}
+
+.f_inner dl:last-child dd {
+  font-size: 20px;
+  display: inline-block;
+
+}
+
+/* 메뉴 제목 */
+.f_inner dt {
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.f_inner dt a {
+  color: #f36f21;
+  font-weight: bold;
+}
+
+/* 하위 메뉴 */
+.f_inner dd {
+  margin-bottom: 10px;
+}
+
+.f_inner dd a {
+  color: #b1aeae;
+  font-size: 12px;
+}
+
+/* SNS 아이콘 */
+.f_inner dd i {
+  font-size: 18px;
+  border: 0.5px solid rgb(131, 131, 131);
+  padding: 5px;
+  margin-right: 7px;
+}
+
+/* 하단 로고 및 저작권 */
+footer address {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 60px;
+  padding: 25px 45px;
+  background-color: #202020;
+  font-style: normal;
+  position: relative;
+}
+
+footer address img {
+  width: 125px;
+  opacity: 0.5;
+}
+
+footer address p {
+  position: absolute;
+  color: #b1aeae;
+  font-size: 12px;
+  top: 33px; right: 45px;
+}
+
+
+/* 탑 버튼 */
+.top_btn{
+  position: fixed;
+  right: 20px; bottom: 120px;
+  z-index: 9999;
+  display: none;
+}
+
